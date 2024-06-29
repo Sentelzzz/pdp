@@ -49,7 +49,7 @@ workflows:
   nightly_build:
     triggers:
       - schedule:
-          cron: "5 * * * *"
+          cron: "*/5 * * * *"
           filters:
             branches:
               only:
