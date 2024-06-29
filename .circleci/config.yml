@@ -53,7 +53,7 @@ workflows:
           filters:
             branches:
               only:
-                - test
+                - master
     jobs:
       - test-java
     # - deploy:
