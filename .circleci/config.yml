@@ -44,6 +44,14 @@ workflows:
   build-and-test:
     jobs:
       - test-java
+    nightly_build:
+      triggers:
+        - schedule:
+            cron: "5 * * * *"
+            filters:
+              branches:
+                only:
+                  - test
     # - deploy:
     #     requires:
     #       - test-java
