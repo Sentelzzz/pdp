@@ -41,6 +41,7 @@ jobs:
           name: deploy
           command: '#e.g. ./deploy.sh'
 workflows:
+  version: 2
   build-and-test:
     jobs:
       - test-java
